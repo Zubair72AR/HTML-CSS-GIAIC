@@ -5,3 +5,38 @@
   box-sizing: border-box;
   font-family: "Noto Sans", sans-serif;
 }
+
+:root {
+  --Color01: crimson;
+  --Color02: #222a35;
+  --DarkLight: #383b3f;
+  --White: white;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+}
+
+/*///////////////////////////*/
+/* Main Portfolio */
+/*///////////////////////////*/
+.portfolio {
+  max-width: 1100px;
+  background-color: aqua;
+}
+
+/*///////////////////////////*/
+/* Top Social Media Contact Numbers Portion */
+/*///////////////////////////*/
+.social-Contact {
+  background-color: #222a35;
+}
+.social-Border {
+  width: 30px;
+  height: 30px;
+  background-color: var(--DarkLight);
+}
+.fa-brands {
+  color: var(--White);
+}
