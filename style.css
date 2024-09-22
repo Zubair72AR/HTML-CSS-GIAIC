@@ -24,7 +24,6 @@ body {
 /* Main Portfolio */
 /*///////////////////////////////////////////////////////*/
 .portfolio {
-  max-width: 1000px;
   background-color: aqua;
 }
 
@@ -32,15 +31,21 @@ body {
 /* Social Media & Contact Container */
 /*///////////////////////////////////////////////////////*/
 .social-section {
-  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100vw;
+  height: 50px;
+  background-color: rgb(121, 121, 255);
 }
-.social__Icon {
-  width: 5rem;
-  height: 5rem;
-  background-color: aquamarine;
+.social__iconDiv a {
 }
-.social__Icon i {
-  width: 5rem;
-  height: 5rem;
-  background-color: rgb(12, 187, 129);
+.fa-brands {
+  width: 30px;
+  height: 30px;
+}
+.social__contactDiv {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
