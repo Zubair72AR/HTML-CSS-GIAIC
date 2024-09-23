@@ -15,9 +15,6 @@
   font-family: "Noto Sans", sans-serif;
 }
 
-body {
-}
-
 .btn {
   padding: 2px 15px;
   border: none;
@@ -84,6 +81,7 @@ body {
   justify-content: space-between;
   align-items: center;
   padding: 10px 20px;
+  width: 100vw;
   background-color: var(--Color01);
 }
 .logo {
