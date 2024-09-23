@@ -1,10 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap");
 
 :root {
-  --Color01: crimson;
+  --Color01: #dc143c;
   --Color02: #222a35;
   --gray: #383b3f;
-  --White: white;
+  --White: #ffffff;
   --Black: #080808;
 }
 
@@ -16,8 +16,13 @@
 }
 
 body {
-  display: flex;
-  justify-content: center;
+}
+
+.btn {
+  padding: 2px 15px;
+  border: none;
+  border-radius: 5px;
+  color: var(--White);
 }
 
 /*///////////////////////////////////////////////////////*/
@@ -35,17 +40,121 @@ body {
   justify-content: space-around;
   align-items: center;
   width: 100vw;
-  height: 50px;
-  background-color: rgb(121, 121, 255);
+  height: 25px;
+  background-color: var(--Color02);
 }
-.social__iconDiv a {
-}
-.fa-brands {
-  width: 30px;
-  height: 30px;
-}
-.social__contactDiv {
+.social-div {
   display: flex;
   justify-content: space-around;
   align-items: center;
 }
+.social-div li {
+  list-style-type: none;
+  margin-right: 0.5rem;
+}
+.social-div li a {
+  font-size: 0.8rem;
+  color: var(--White);
+}
+
+.contact-div {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 1rem;
+}
+.contact-number {
+  font-size: 0.8rem;
+  color: var(--White);
+}
+.contact-btn {
+  padding: 1px 15px;
+  background-color: limegreen;
+}
+.contact-btn a {
+  color: var(--White);
+  font-size: 0.8rem;
+}
+
+/*///////////////////////////////////////////////////////*/
+/* Navbar Container Start Here */
+/*///////////////////////////////////////////////////////*/
+.navbar-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: var(--Color01);
+}
+.logo {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--White);
+}
+.navbar-section ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.navbar-section ul li {
+  font-size: 0.65rem;
+  font-weight: 600;
+  margin-right: 0.5rem;
+  text-transform: uppercase;
+  list-style-type: none;
+  cursor: pointer;
+  color: var(--White);
+  transition: 1s ease;
+}
+.navbar-section ul li:hover {
+  border-bottom: 1px solid var(--White);
+  color: #ffbbc9;
+}
+
+/*///////////////////////////////////////////////////////*/
+/* Hero Container Start Here */
+/*///////////////////////////////////////////////////////*/
+
+/*///////////////////////////////////////////////////////*/
+/* Why Us / Our Advantage Container Start Here */
+/*///////////////////////////////////////////////////////*/
+
+/*///////////////////////////////////////////////////////*/
+/* About Us Container Start Here */
+/*///////////////////////////////////////////////////////*/
+
+/*///////////////////////////////////////////////////////*/
+/* Our Services Container Start Here */
+/*///////////////////////////////////////////////////////*/
+
+/*///////////////////////////////////////////////////////*/
+/* Our Portfolio Container Start Here */
+/*///////////////////////////////////////////////////////*/
+
+/*///////////////////////////////////////////////////////*/
+/* Our Process Container Start Here */
+/*///////////////////////////////////////////////////////*/
+
+/*///////////////////////////////////////////////////////*/
+/* Reviews / Peoples About Us  Container Start Here */
+/*///////////////////////////////////////////////////////*/
+
+/*///////////////////////////////////////////////////////*/
+/* Our Skills Container Start Here */
+/*///////////////////////////////////////////////////////*/
+
+/*///////////////////////////////////////////////////////*/
+/* Start Your New Project Container Start Here */
+/*///////////////////////////////////////////////////////*/
+
+/*///////////////////////////////////////////////////////*/
+/* Our Packages Container Start Here */
+/*///////////////////////////////////////////////////////*/
+
+/*///////////////////////////////////////////////////////*/
+/* Our Contact Container Start Here */
+/*///////////////////////////////////////////////////////*/
+
+/*///////////////////////////////////////////////////////*/
+/* Footer Container Start Here */
+/*///////////////////////////////////////////////////////*/
