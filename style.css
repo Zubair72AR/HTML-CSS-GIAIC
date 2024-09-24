@@ -170,7 +170,7 @@ a {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  background-image: url(/public/ImagesWhite.jpg);
+  background-image: url(/ImagesWhite.jpg);
   background-blend-mode: multiply;
 }
 .image01 {
@@ -199,14 +199,13 @@ a {
 .half-line {
   background-color: var(--White);
   opacity: 35%;
-  width: 23%;
+  width: 18%;
   height: 4rem;
 }
 .full-line h2 {
-  font-size: 2.5rem;
-  font-weight: 600;
+  font-size: 3.5rem;
+  font-weight: 700;
   text-transform: uppercase;
-  letter-spacing: 0.2rem;
   color: var(--White);
 }
 .slider p {
