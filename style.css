@@ -3,9 +3,10 @@
 :root {
   --Color01: #dc143c;
   --Color02: #222a35;
-  --gray: #354357;
+  --gray: #455367;
   --White: #ffffff;
   --Black: #080808;
+  --Light: #e3e3e3;
 }
 
 * {
@@ -277,6 +278,59 @@ a {
 /*///////////////////////////////////////////////////////*/
 /* Why Us / Our Advantage Container Start Here */
 /*///////////////////////////////////////////////////////*/
+.whyUs-sec {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.all__heading {
+  font-size: 2rem;
+  text-transform: uppercase;
+  margin-top: 1rem;
+  color: var(--Color02);
+}
+.all__heading span {
+  color: var(--Color01);
+}
+.all__para {
+  text-align: center;
+  font-size: 0.8rem;
+  width: 35rem;
+  color: var(--gray);
+}
+.whyUs__div {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.whyUs__portion {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.whyUs__iconDiv i {
+  width: 7rem;
+  height: 7rem;
+  background-color: var(--Light);
+  border-radius: 50%;
+  line-height: 7rem;
+  text-align: center;
+  font-size: 4rem;
+}
+.whyUs__subHead {
+  text-align: center;
+  font-size: 1rem;
+  text-transform: uppercase;
+  font-weight: 500;
+  margin-top: 0.4rem;
+}
+.whyUs__portion p {
+  text-align: center;
+  font-size: 0.8rem;
+  width: 10rem;
+}
 
 /*///////////////////////////////////////////////////////*/
 /* About Us Container Start Here */
