@@ -3,9 +3,11 @@
 :root {
   --Color01: #dc143c;
   --Color02: #222a35;
-  --gray: #383b3f;
+  --gray: #354357;
   --White: #ffffff;
   --Black: #080808;
+  --Gradients: linear-gradient(-45deg, orangered, var(--Color01));
+  --Gradients2: linear-gradient(-45deg, #25a53a, #00c635);
 }
 
 * {
@@ -14,100 +16,71 @@
   box-sizing: border-box;
   font-family: "Noto Sans", sans-serif;
 }
-
-.btn {
-  padding: 2px 15px;
+body {
+  margin: auto;
+}
+button {
   border: none;
-  border-radius: 5px;
+  padding: 8px 20px;
   color: var(--White);
+  background-image: var(--Gradients);
+  cursor: pointer;
 }
 
+a {
+  text-decoration: none;
+  color: var(--White);
+}
 /*///////////////////////////////////////////////////////*/
 /* Main Portfolio */
 /*///////////////////////////////////////////////////////*/
 .portfolio {
-  background-color: aqua;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
-
 /*///////////////////////////////////////////////////////*/
 /* Social Media & Contact Container */
 /*///////////////////////////////////////////////////////*/
-.social-section {
+.socialContact-sec {
   display: flex;
-  justify-content: space-around;
   align-items: center;
-  width: 100vw;
-  height: 25px;
+  justify-content: space-between;
+  width: 100%;
+  padding: 0.3rem 10rem;
   background-color: var(--Color02);
 }
 .social-div {
   display: flex;
-  justify-content: space-around;
   align-items: center;
+  justify-content: center;
+  gap: 0.7rem;
 }
-.social-div li {
-  list-style-type: none;
-  margin-right: 0.5rem;
+.social-div a {
+  width: 1.7rem;
+  height: 1.7rem;
+  background-color: var(--gray);
+  border-radius: 50px;
+  line-height: 1.7rem;
+  text-align: center;
+  transition: 1s ease-out all;
 }
-.social-div li a {
-  font-size: 0.8rem;
-  color: var(--White);
+.social-div a:hover {
+  background-color: var(--White);
+  color: var(--Color01);
+  scale: 1.2;
 }
 
 .contact-div {
   display: flex;
-  justify-content: space-around;
   align-items: center;
-  gap: 1rem;
-}
-.contact-number {
-  font-size: 0.8rem;
-  color: var(--White);
-}
-.contact-btn {
-  padding: 1px 15px;
-  background-color: limegreen;
-}
-.contact-btn a {
-  color: var(--White);
-  font-size: 0.8rem;
+  justify-content: center;
 }
 
 /*///////////////////////////////////////////////////////*/
 /* Navbar Container Start Here */
 /*///////////////////////////////////////////////////////*/
-.navbar-section {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 10px 20px;
-  width: 100vw;
-  background-color: var(--Color01);
-}
-.logo {
-  font-size: 1.5rem;
-  font-weight: 600;
-  color: var(--White);
-}
-.navbar-section ul {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-.navbar-section ul li {
-  font-size: 0.65rem;
-  font-weight: 600;
-  margin-right: 0.5rem;
-  text-transform: uppercase;
-  list-style-type: none;
-  cursor: pointer;
-  color: var(--White);
-  transition: 1s ease;
-}
-.navbar-section ul li:hover {
-  border-bottom: 1px solid var(--White);
-  color: #ffbbc9;
-}
 
 /*///////////////////////////////////////////////////////*/
 /* Hero Container Start Here */
