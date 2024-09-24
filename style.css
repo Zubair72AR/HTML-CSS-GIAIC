@@ -167,7 +167,7 @@ a {
   background-image: url(/public/Hero-Image.jpg);
   background-size: cover;
   background-position: center;
-  opacity: 10;
+
   background-color: var(--Color01);
   display: flex;
   justify-content: center;
