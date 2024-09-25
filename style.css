@@ -3,7 +3,7 @@
 :root {
   --Color01: #dc143c;
   --Color02: #222a35;
-  --gray: #455367;
+  --gray: #555c67;
   --White: #ffffff;
   --Black: #080808;
   --Light: #e3e3e3;
@@ -285,18 +285,21 @@ a {
   flex-direction: column;
 }
 .all__heading {
-  font-size: 2rem;
+  font-size: 2.3rem;
   text-transform: uppercase;
-  margin-top: 1rem;
+  margin-top: 1.5rem;
+  line-height: 2.2rem;
   color: var(--Color02);
 }
 .all__heading span {
   color: var(--Color01);
 }
 .all__para {
+  line-height: 1rem;
   text-align: center;
   font-size: 0.8rem;
   width: 35rem;
+  margin-bottom: 1rem;
   color: var(--gray);
 }
 .whyUs__div {
@@ -311,13 +314,14 @@ a {
   flex-direction: column;
 }
 .whyUs__iconDiv i {
-  width: 7rem;
-  height: 7rem;
+  width: 6rem;
+  height: 6rem;
   background-color: var(--Light);
   border-radius: 50%;
-  line-height: 7rem;
+  line-height: 6rem;
   text-align: center;
-  font-size: 4rem;
+  font-size: 3rem;
+  color: var(--Color02);
 }
 .whyUs__subHead {
   text-align: center;
