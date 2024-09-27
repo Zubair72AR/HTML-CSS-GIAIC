@@ -383,16 +383,158 @@ a {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  width: 80%;
+  margin-bottom: 3rem;
+}
+.service__div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+}
+.service__column {
+  margin-top: 3rem;
+  text-align: center;
+  background-color: var(--Light);
+  padding: 0rem 1rem 2rem;
+}
+.service__star {
+  width: 3.5rem;
+  height: 3.5rem;
+  border-radius: 50%;
+  background-color: orange;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: red;
+  position: relative;
+  top: 0%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.service__subHead {
+  margin-top: -0.5rem;
+  font-size: 1rem;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: var(--Color02);
+}
+.service__column p {
+  font-size: 0.7rem;
+  color: var(--gray);
+}
+.service__column a {
+  font-size: 0.8rem;
+  color: green;
+  text-decoration: underline;
 }
 
 /*///////////////////////////////////////////////////////*/
 /* Our Portfolio Container Start Here */
 /*///////////////////////////////////////////////////////*/
+.portfolio-sec {
+  background-color: var(--Color02);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 3rem;
+  width: 100%;
+}
+.portfolio-sec h3 {
+  color: var(--White);
+}
+.portfolio-sec p {
+  color: var(--White);
+}
+.portfolio-sec ul {
+  color: var(--White);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style-type: none;
+  gap: 1rem;
+  text-transform: uppercase;
+  font-size: 1rem;
+  font-weight: 600;
+}
+.portfolio__logoDiv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  width: 85%;
+  margin-top: 1.5rem;
+  margin-bottom: 3rem;
+}
+.portfolio__logoDiv img {
+  width: 13rem;
+  height: 13rem;
+  object-fit: cover;
+  box-shadow: 5px 5px 10px #111111;
+}
 
 /*///////////////////////////////////////////////////////*/
 /* Our Process Container Start Here */
 /*///////////////////////////////////////////////////////*/
+.process-sec {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 80%;
+  margin-bottom: 3rem;
+}
+.process__div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1rem;
+  gap: 1rem;
+}
+.process-innerDiv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+}
+.process__number {
+  width: 1.8rem;
+  height: 1.8rem;
+  background-color: orange;
+  border-radius: 50%;
+  text-align: center;
+  position: absolute;
+  top: 0%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.process__number {
+  line-height: 1.8rem;
+  font-weight: 600;
+}
 
+.process__img {
+  width: 7rem;
+  height: 7rem;
+  border: 2px solid var(--Light);
+  border-radius: 50%;
+  text-align: center;
+}
+.process__subHead {
+  margin-top: 0.5rem;
+  font-size: 1rem;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+.process__subPara {
+  font-size: 0.75rem;
+  color: var(--gray);
+  text-align: center;
+  line-height: 0.8rem;
+}
 /*///////////////////////////////////////////////////////*/
 /* Reviews / Peoples About Us  Container Start Here */
 /*///////////////////////////////////////////////////////*/
