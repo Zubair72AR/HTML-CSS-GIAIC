@@ -574,18 +574,18 @@ a {
   font-weight: 600;
 }
 .line {
-  border: 1px dashed #c8c8c8;
-  background-color: --White;
+  border-bottom: 1px dashed #c8c8c8;
+  background-color: var(--White);
   box-shadow: 0px 0px 0px 2px #c8c8c8 inset, 0px 0px 0px 2px #c8c8c8;
   position: absolute;
   min-width: 85rem;
-  margin-top: -4.5rem;
+  margin-top: -5rem;
 }
 .process__img {
   width: 7rem;
   height: 7rem;
   border: 1px dashed #c8c8c8;
-  background-color: white;
+  background-color: var(--White);
   box-shadow: 0px 0px 0px 2px #c8c8c8 inset, 0px 0px 0px 2px #c8c8c8;
   border-radius: 50%;
   text-align: center;
@@ -606,6 +606,73 @@ a {
 /*///////////////////////////////////////////////////////*/
 /* Reviews / Peoples About Us  Container Start Here */
 /*///////////////////////////////////////////////////////*/
+.review-sec {
+  background-color: var(--Light);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  margin-bottom: 3rem;
+}
+.review__div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 70rem;
+}
+.review__column {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 35rem;
+}
+.review__column1 {
+  border-bottom: 1px solid var(--gray);
+  border-right: 1px solid var(--gray);
+}
+.review__column2 {
+  border-bottom: 1px solid var(--gray);
+  border-left: 1px solid var(--gray);
+}
+.review__column3 {
+  border-top: 1px solid var(--gray);
+  border-right: 1px solid var(--gray);
+}
+.review__column4 {
+  border-left: 1px solid var(--gray);
+  border-top: 1px solid var(--gray);
+}
+.review__image {
+  width: 7rem;
+  height: 7rem;
+  background-color: var(--White);
+  border-radius: 50%;
+  margin-right: 2rem;
+  text-align: center;
+}
+.review__image i {
+  color: var(--gray);
+  font-size: 3.5rem;
+  line-height: 7rem;
+}
+.review__text {
+  width: 50%;
+}
+.review__text h4 {
+  font-size: 1rem;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: var(--Color02);
+}
+
+.review__text p {
+  margin-top: 0.2rem;
+  line-height: 1rem;
+  font-size: 0.8rem;
+  color: var(--gray);
+}
 
 /*///////////////////////////////////////////////////////*/
 /* Our Skills Container Start Here */
