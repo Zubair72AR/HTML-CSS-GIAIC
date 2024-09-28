@@ -613,7 +613,8 @@ a {
   align-items: center;
   flex-direction: column;
   width: 100%;
-  margin-bottom: 3rem;
+  padding: 2rem 0rem;
+  margin-bottom: 2rem;
 }
 .review__div {
   display: flex;
@@ -621,35 +622,39 @@ a {
   align-items: center;
   flex-wrap: wrap;
   width: 70rem;
+  margin: 2rem auto;
 }
 .review__column {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   width: 35rem;
 }
 .review__column1 {
   border-bottom: 1px solid var(--gray);
   border-right: 1px solid var(--gray);
+  padding-bottom: 2rem;
+  padding-right: 2rem;
 }
 .review__column2 {
   border-bottom: 1px solid var(--gray);
-  border-left: 1px solid var(--gray);
+  padding-bottom: 2rem;
+  padding-left: 2rem;
 }
 .review__column3 {
-  border-top: 1px solid var(--gray);
   border-right: 1px solid var(--gray);
+  padding-top: 2rem;
+  padding-right: 2rem;
 }
 .review__column4 {
-  border-left: 1px solid var(--gray);
-  border-top: 1px solid var(--gray);
+  padding-top: 2rem;
+  padding-left: 2rem;
 }
 .review__image {
   width: 7rem;
   height: 7rem;
   background-color: var(--White);
   border-radius: 50%;
-  margin-right: 2rem;
   text-align: center;
 }
 .review__image i {
@@ -658,7 +663,7 @@ a {
   line-height: 7rem;
 }
 .review__text {
-  width: 50%;
+  width: 70%;
 }
 .review__text h4 {
   font-size: 1rem;
@@ -673,11 +678,34 @@ a {
   font-size: 0.8rem;
   color: var(--gray);
 }
-
+.review__circle i {
+  color: var(--gray);
+}
+.review__circle i:nth-child(1) {
+  color: var(--Color01);
+}
 /*///////////////////////////////////////////////////////*/
 /* Our Skills Container Start Here */
 /*///////////////////////////////////////////////////////*/
+.progress {
+  width: 100px;
+  height: 100px;
+  position: relative;
+}
+.progress circle {
+  fill: none;
+  stroke-width: 10;
+  stroke: #4caf50; /* Progress color */
+  stroke-dasharray: 220; /* Circumference */
+  stroke-dashoffset: 220; /* Start from 0 */
+  animation: progress-animation 5s infinite;
+}
 
+@keyframes progress-animation {
+  to {
+    stroke-dashoffset: 0; /* Fill the circle */
+  }
+}
 /*///////////////////////////////////////////////////////*/
 /* Start Your New Project Container Start Here */
 /*///////////////////////////////////////////////////////*/
