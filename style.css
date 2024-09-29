@@ -389,8 +389,6 @@ a {
   color: var(--gray);
 }
 @media only screen and (max-width: 900px) {
-  .whyUs__div {
-  }
 }
 /*///////////////////////////////////////////////////////*/
 /* About Us Container Start Here */
