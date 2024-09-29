@@ -15,6 +15,9 @@
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
 }
+html {
+  scroll-behavior: smooth;
+}
 
 body {
   margin: auto;
@@ -687,28 +690,177 @@ a {
 /*///////////////////////////////////////////////////////*/
 /* Our Skills Container Start Here */
 /*///////////////////////////////////////////////////////*/
-.progress {
-  width: 100px;
-  height: 100px;
+.skills-sec {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  padding: 2rem 0rem;
+}
+.skills__div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 70rem;
+  margin-bottom: 2rem;
+}
+.skills__progress {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.skills__circle {
+  width: 132px;
+  height: 132px;
+  background-color: var(--White);
+  border: 3px solid var(--gray);
+  border-radius: 50%;
+  position: absolute;
+}
+.skills__circle p {
+  color: var(--gray);
+  text-align: center;
+  line-height: 130px;
+  font-size: 2rem;
+  font-weight: 700;
+}
+.skills__circle span {
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+svg {
+  width: 150px;
+  height: 150px;
   position: relative;
 }
-.progress circle {
+.skills__circle01 {
   fill: none;
-  stroke-width: 10;
-  stroke: #4caf50; /* Progress color */
-  stroke-dasharray: 220; /* Circumference */
-  stroke-dashoffset: 220; /* Start from 0 */
-  animation: progress-animation 5s infinite;
+  stroke-width: 20;
+  stroke: #54c8e8;
+  stroke-dasharray: 409;
+  stroke-dashoffset: 409;
+  animation: progress-stroke01 6s infinite ease;
 }
-
-@keyframes progress-animation {
-  to {
-    stroke-dashoffset: 0; /* Fill the circle */
+@keyframes progress-stroke01 {
+  80% {
+    stroke-dashoffset: 37;
   }
 }
+.skills__circle02 {
+  fill: none;
+  stroke-width: 20;
+  stroke: #ffdd00;
+  stroke-dasharray: 409;
+  stroke-dashoffset: 409;
+  animation: progress-stroke02 6s infinite ease;
+  animation-delay: 0.5s;
+}
+@keyframes progress-stroke02 {
+  80% {
+    stroke-dashoffset: 81;
+  }
+}
+.skills__circle03 {
+  fill: none;
+  stroke-width: 20;
+  stroke: #f79332;
+  stroke-dasharray: 409;
+  stroke-dashoffset: 409;
+  animation: progress-stroke03 6s infinite ease;
+  animation-delay: 1s;
+}
+@keyframes progress-stroke03 {
+  80% {
+    stroke-dashoffset: 103;
+  }
+}
+.skills__circle04 {
+  fill: none;
+  stroke-width: 20;
+  stroke: #f176a5;
+  stroke-dasharray: 409;
+  stroke-dashoffset: 409;
+  animation: progress-stroke04 6s infinite ease;
+  animation-delay: 1.5s;
+}
+@keyframes progress-stroke04 {
+  80% {
+    stroke-dashoffset: 147;
+  }
+}
+.skills__circle05 {
+  fill: none;
+  stroke-width: 20;
+  stroke: #655dc6;
+  stroke-dasharray: 409;
+  stroke-dashoffset: 409;
+  animation: progress-stroke05 6s infinite ease;
+  animation-delay: 2s;
+}
+@keyframes progress-stroke05 {
+  80% {
+    stroke-dashoffset: 62;
+  }
+}
+.skills__column h4 {
+  color: var(--Color02);
+  margin-top: 0.5rem;
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  font-weight: 600;
+  text-align: center;
+}
+
 /*///////////////////////////////////////////////////////*/
 /* Start Your New Project Container Start Here */
 /*///////////////////////////////////////////////////////*/
+.skills__starProject {
+  background-color: var(--Color01);
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+}
+.skills__starProject h4 {
+  font-size: 3rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: var(--White);
+}
+.skills__starProject p {
+  font-size: 0.9rem;
+  color: var(--White);
+  width: 60%;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+.skills__input-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  margin: 1.5rem auto 3rem;
+}
+.skills__input-btn input {
+  width: 25rem;
+  padding: 0.6rem 1rem;
+  outline: none;
+  font-size: 1rem;
+  border: none;
+}
+.skills__btn {
+  background-color: var(--White);
+  color: var(--Color01);
+  font-size: 1rem;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+.skills__btn:hover {
+  color: var(--White);
+}
 
 /*///////////////////////////////////////////////////////*/
 /* Our Packages Container Start Here */
@@ -717,6 +869,33 @@ a {
 /*///////////////////////////////////////////////////////*/
 /* Our Contact Container Start Here */
 /*///////////////////////////////////////////////////////*/
+.our-contact-sec {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  padding: 2rem 0rem;
+  background-image: url("https://t4.ftcdn.net/jpg/02/41/95/15/360_F_241951583_x3Pn4HbvGKfbdvVd43jKluTYB9IaXz1K.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 50rem;
+}
+.our-contact__location {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.our-contact__phoneDiv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.our-contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
 /*///////////////////////////////////////////////////////*/
 /* Footer Container Start Here */

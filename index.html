@@ -40,14 +40,14 @@
         </div>
         <div class="nav__menu">
           <a class="nav__link active" href="#">Why Us</a>
-          <a class="nav__link" href="#">About</a>
-          <a class="nav__link" href="#">Services</a>
-          <a class="nav__link" href="#">Portfolio</a>
-          <a class="nav__link" href="#">Contact</a>
-          <a class="nav__link" href="#">Process</a>
-          <a class="nav__link" href="#">Reviews</a>
-          <a class="nav__link" href="#">Skills</a>
-          <a class="nav__link" href="#">Packages</a>
+          <a class="nav__link" href="#about">About</a>
+          <a class="nav__link" href="#services">Services</a>
+          <a class="nav__link" href="#portfolio">Portfolio</a>
+          <a class="nav__link" href="#process">Process</a>
+          <a class="nav__link" href="#reviews">Reviews</a>
+          <a class="nav__link" href="#skills">Skills</a>
+          <a class="nav__link" href="#packages">Packages</a>
+          <a class="nav__link" href="#contact">Contact</a>
         </div>
       </nav>
       <!-- Navbar Container Ends Here-->
@@ -167,7 +167,7 @@
       <!-- Why Us / Our Advantage Container Ends Here-->
 
       <!-- About Us Container Start Here-->
-      <container class="about-sec">
+      <container id="about" class="about-sec">
         <h3 class="all__heading">About <span>Us</span></h3>
         <div class="about__div">
           <div class="about__div2">
@@ -189,7 +189,7 @@
       <!-- About Us Container Ends Here-->
 
       <!-- Our Services Container Start Here-->
-      <container class="services-sec">
+      <container id="services" class="services-sec">
         <h3 class="all__heading">Our <span>Services</span></h3>
         <p class="all__para">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus
@@ -237,7 +237,7 @@
       <!-- Our Services Container Ends Here-->
 
       <!-- Our Portfolio Container Start Here-->
-      <container class="portfolio-sec">
+      <container id="portfolio" class="portfolio-sec">
         <h3 class="all__heading">Our <span>Portfolio</span></h3>
         <p class="all__para">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus
@@ -299,7 +299,7 @@
       <!-- Our Portfolio Container Ends Here-->
 
       <!-- Our Process Container Start Here-->
-      <container class="process-sec">
+      <container id="process" class="process-sec">
         <h3 class="all__heading">
           Our <span>Pr<img src="/assets/Process.svg" alt="" />cess</span>
         </h3>
@@ -392,7 +392,7 @@
       <!-- Our Process Container Ends Here-->
 
       <!-- Reviews / Peoples About Us  Container Start Here-->
-      <container class="review-sec">
+      <container id="reviews" class="review-sec">
         <h3 class="all__heading">Peoples <span>About Us</span></h3>
         <p class="all__para">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus
@@ -454,18 +454,154 @@
       <!-- Reviews / Peoples About Us  Container Ends Here-->
 
       <!-- Our Skills Container Start Here-->
-      <svg class="progress">
-        <circle class="progress-circle" cx="50" cy="50" r="35"></circle>
-      </svg>
+      <container id="skills" class="skills-sec">
+        <h3 class="all__heading">Our <span>Skills</span></h3>
+        <p class="all__para">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus
+          voluptates ex, minus sequi laborum itaque deleniti corrupti ducimus.
+        </p>
+        <div class="skills__div">
+          <div class="skills__column">
+            <div class="skills__progress">
+              <div class="skills__circle">
+                <p>91<span>%</span></p>
+              </div>
+              <svg width="150px" height="150px">
+                <circle
+                  class="skills__circle01"
+                  cx="75px"
+                  cy="75px"
+                  r="65px"
+                ></circle>
+              </svg>
+            </div>
+            <h4 class="skills__subHead">SEO & Ads</h4>
+          </div>
+          <div class="skills__column">
+            <div class="skills__progress">
+              <div class="skills__circle">
+                <p>80<span>%</span></p>
+              </div>
+              <svg width="150px" height="150px">
+                <circle
+                  class="skills__circle02"
+                  cx="75px"
+                  cy="75px"
+                  r="65px"
+                ></circle>
+              </svg>
+            </div>
+            <h4 class="skills__subHead">Web Design</h4>
+          </div>
+          <div class="skills__column">
+            <div class="skills__progress">
+              <div class="skills__circle">
+                <p>75<span>%</span></p>
+              </div>
+              <svg width="150px" height="150px">
+                <circle
+                  class="skills__circle03"
+                  cx="75px"
+                  cy="75px"
+                  r="65px"
+                ></circle>
+              </svg>
+            </div>
+            <h4 class="skills__subHead">Branding</h4>
+          </div>
+          <div class="skills__column">
+            <div class="skills__progress">
+              <div class="skills__circle">
+                <p>64<span>%</span></p>
+              </div>
+              <svg width="150px" height="150px">
+                <circle
+                  class="skills__circle04"
+                  cx="75px"
+                  cy="75px"
+                  r="65px"
+                ></circle>
+              </svg>
+            </div>
+            <h4 class="skills__subHead">Content Strategy</h4>
+          </div>
+          <div class="skills__column">
+            <div class="skills__progress">
+              <div class="skills__circle">
+                <p>85<span>%</span></p>
+              </div>
+              <svg width="150px" height="150px">
+                <circle
+                  class="skills__circle05"
+                  cx="75px"
+                  cy="75px"
+                  r="65px"
+                ></circle>
+              </svg>
+            </div>
+            <h4 class="skills__subHead">Digital Analytics</h4>
+          </div>
+        </div>
+      </container>
       <!-- Our Skills Container Ends Here-->
 
       <!-- Start Your New Project Container Start Here-->
+      <container class="skills__starProject">
+        <h4>Start your new Project</h4>
+        <div class="skills__input-btn">
+          <input type="text" placeholder="Your Name" />
+          <input type="email" placeholder="Your Email" />
+          <input type="number" placeholder="Your Phone" />
+          <button class="skills__btn btn">Send Request</button>
+        </div>
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eligendi
+          earum nam, obcaecati voluptas cumque explicabo, officiis molestias
+          accusantium error repudiandae tempore iure sequi voluptate ea ipsum
+          numquam modi esse culpa.
+        </p>
+      </container>
       <!-- Start Your New Project Container Ends Here-->
 
       <!-- Our Packages Container Start Here-->
+      <container id="packages" class="package-sec">
+        <h3 class="all__heading">Our <span>Packages</span></h3>
+        <p class="all__para">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus
+          voluptates ex, minus sequi laborum itaque deleniti corrupti ducimus.
+        </p>
+      </container>
       <!-- Our Packages Container Ends Here-->
 
       <!-- Our Contact Container Start Here-->
+      <container id="contact" class="our-contact-sec">
+        <h3 class="all__heading">Our <span>Contacts</span></h3>
+        <p class="all__para">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus
+          voluptates ex, minus sequi laborum itaque deleniti corrupti ducimus.
+        </p>
+        <div class="our-contact__location">
+          <i class="fa-solid fa-location-dot"></i>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore
+            iusto rerum voluptas hic.
+          </p>
+        </div>
+        <div class="our-contact__phoneDiv">
+          <div class="our-contact">
+            <i class="fa-solid fa-phone"></i>
+            <p>+92(333)123-4567</p>
+          </div>
+          <div class="our-contact">
+            <i class="fa-solid fa-phone"></i>
+            <p>+92(333)123-4567</p>
+          </div>
+          <div class="our-contact">
+            <i class="fa-solid fa-envelope"></i>
+            <p>yourmail123@gmail.com</p>
+          </div>
+        </div>
+      </container>
       <!-- Our Contact Container Ends Here-->
 
       <!-- Footer Container Start Here-->
