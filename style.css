@@ -290,12 +290,10 @@ a {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  margin-bottom: 2rem;
 }
 .all__heading {
   font-size: 2.3rem;
   text-transform: uppercase;
-  margin-top: 1.5rem;
   line-height: 2.2rem;
   color: var(--Color02);
 }
@@ -387,7 +385,6 @@ a {
   align-items: center;
   flex-direction: column;
   width: 80%;
-  margin-bottom: 3rem;
 }
 .service__div {
   display: flex;
@@ -441,7 +438,6 @@ a {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  margin-bottom: 1rem;
   width: 100%;
 }
 .portfolio-sec h3 {
@@ -473,7 +469,6 @@ a {
   gap: 1rem;
   max-width: 85rem;
   margin-top: 1.5rem;
-  margin-bottom: 3rem;
 }
 .portfolio__logoDiv img {
   width: 16rem;
@@ -492,7 +487,6 @@ a {
   align-items: center;
   flex-direction: column;
   max-width: 90rem;
-  margin-bottom: 3rem;
 }
 
 .all__heading img {
@@ -616,8 +610,6 @@ a {
   align-items: center;
   flex-direction: column;
   width: 100%;
-  padding: 2rem 0rem;
-  margin-bottom: 2rem;
 }
 .review__div {
   display: flex;
@@ -696,14 +688,12 @@ a {
   align-items: center;
   flex-direction: column;
   width: 100%;
-  padding: 2rem 0rem;
 }
 .skills__div {
   display: flex;
   justify-content: space-between;
   align-items: center;
   width: 70rem;
-  margin-bottom: 2rem;
 }
 .skills__progress {
   display: flex;
@@ -817,7 +807,6 @@ svg {
 /*///////////////////////////////////////////////////////*/
 .skills__starProject {
   background-color: var(--Color01);
-  padding: 2rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -825,7 +814,7 @@ svg {
   width: 100%;
 }
 .skills__starProject h4 {
-  font-size: 3rem;
+  font-size: 2.5rem;
   font-weight: 700;
   text-transform: uppercase;
   color: var(--White);
@@ -835,14 +824,13 @@ svg {
   color: var(--White);
   width: 60%;
   text-align: center;
-  margin-bottom: 2rem;
 }
 .skills__input-btn {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 2rem;
-  margin: 1.5rem auto 3rem;
+  margin: 1rem auto 2.5rem;
 }
 .skills__input-btn input {
   width: 25rem;
@@ -865,6 +853,86 @@ svg {
 /*///////////////////////////////////////////////////////*/
 /* Our Packages Container Start Here */
 /*///////////////////////////////////////////////////////*/
+.package-sec {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+}
+.packages__div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  position: relative;
+  margin-top: 1rem;
+  margin-bottom: 3rem;
+}
+.packages__column {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  border: 1px solid #9a9fa6;
+  padding: 1.5rem 1rem;
+  width: 20rem;
+  height: 24rem;
+  background-color: var(--White);
+  transition: 1s ease;
+}
+.packages__column:hover {
+  scale: 1.07;
+}
+.packages__column h2 {
+  text-transform: uppercase;
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: var(--Color02);
+  margin-bottom: 0.3rem;
+}
+.packages__column hr {
+  width: 90%;
+  border: 1px solid #9a9fa6;
+}
+.packages__column h3 {
+  font-size: 2.2rem;
+  font-weight: 600;
+  color: var(--Color01);
+  margin-top: 0.3rem;
+}
+.packages__column h3 span {
+  font-size: 1.3rem;
+}
+.packages__column h4 {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--Color02);
+}
+.packages__column p {
+  font-size: 0.8rem;
+  font-weight: 400;
+  color: var(--gray);
+  margin-top: 0.1rem;
+}
+.packages__column p span {
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+.packages__column h5 {
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: var(--Color02);
+}
+.packages__orderNow {
+  position: absolute;
+  bottom: -1.2rem;
+  padding: 0.6rem 2rem;
+  font-size: 0.9rem;
+}
+.packages__btn {
+  padding: 0.6rem 4rem;
+  font-size: 0.9rem;
+}
 
 /*///////////////////////////////////////////////////////*/
 /* Our Contact Container Start Here */
@@ -874,7 +942,6 @@ svg {
   align-items: center;
   flex-direction: column;
   width: 100%;
-  padding: 2rem 0rem;
   background-image: url("https://t4.ftcdn.net/jpg/02/41/95/15/360_F_241951583_x3Pn4HbvGKfbdvVd43jKluTYB9IaXz1K.jpg");
   background-size: cover;
   background-position: center;
