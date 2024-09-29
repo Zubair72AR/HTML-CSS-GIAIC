@@ -456,6 +456,15 @@ a {
     flex-direction: column;
   }
 }
+@media only screen and (max-width: 600px) {
+  .about__div img {
+    height: 16rem;
+  }
+  .about__div2 {
+    width: 80%;
+  }
+}
+
 /*/ //////////////////////////////////////////////////////*/
 /* Our Services Container Start Here */
 /*///////////////////////////////////////////////////////*/
