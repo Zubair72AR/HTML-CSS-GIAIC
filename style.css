@@ -881,6 +881,16 @@ svg {
   background-repeat: no-repeat;
   height: 50rem;
 }
+.our-contact-sec i {
+  color: var(--Color01);
+  margin-right: 0.7rem;
+  font-size: 1.3rem;
+}
+.our-contact__location p {
+  color: var(--Color02);
+  font-size: 1.2rem;
+  font-weight: 400;
+}
 .our-contact__location {
   display: flex;
   justify-content: center;
@@ -890,11 +900,18 @@ svg {
   display: flex;
   justify-content: center;
   align-items: center;
+  gap: 3rem;
+  margin-top: 0.2rem;
 }
 .our-contact {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.our-contact p {
+  color: var(--Color02);
+  font-size: 1.2rem;
+  font-weight: 400;
 }
 
 /*///////////////////////////////////////////////////////*/
