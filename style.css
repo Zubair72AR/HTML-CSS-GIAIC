@@ -54,12 +54,16 @@ a {
 /* Social Media & Contact Container */
 /*///////////////////////////////////////////////////////*/
 .socialContact-sec {
+  width: 100%;
+  background-color: var(--Color02);
+}
+.socialContact__w90rem {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: 100%;
+  margin: auto;
+  max-width: 90rem;
   padding: 0.3rem 3rem;
-  background-color: var(--Color02);
 }
 .social__div {
   display: flex;
@@ -119,16 +123,31 @@ a {
   font-weight: 500;
 }
 
+@media only screen and (max-width: 600px) {
+  .socialContact__w90rem {
+    display: block;
+  }
+  .social__div {
+    padding: 0.2rem;
+  }
+  .contact__div {
+    padding: 0.2rem;
+  }
+}
+
 /*///////////////////////////////////////////////////////*/
 /* Navbar Container Start Here */
 /*///////////////////////////////////////////////////////*/
 .nav-sec {
-  overflow: hidden;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 1rem 3rem;
   width: 100%;
+}
+.nav__w90rem {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: auto;
+  max-width: 90rem;
+  padding: 0.3rem 3rem;
 }
 .nav__logo {
   display: flex;
@@ -164,6 +183,27 @@ a {
 .nav__menu .active {
   color: var(--Color01);
   border-bottom: 2px solid var(--Color02);
+}
+@media only screen and (max-width: 900px) {
+  .nav__w90rem {
+    flex-direction: column;
+  }
+  .nav__logo {
+    font-size: 2rem;
+  }
+  .nav__logo i {
+    font-size: 2.2rem;
+  }
+  .nav__menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  .nav__menu a {
+    font-size: 0.8rem;
+    margin: 0rem 1rem;
+  }
 }
 
 /*///////////////////////////////////////////////////////*/
@@ -290,6 +330,8 @@ a {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  padding: 3rem 0rem;
+  width: 100%;
 }
 .all__heading {
   font-size: 2.3rem;
@@ -305,14 +347,15 @@ a {
   text-align: center;
   font-size: 0.8rem;
   width: 35rem;
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
   color: var(--gray);
 }
 .whyUs__div {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 5%;
+  flex-wrap: wrap;
+  gap: 3rem;
 }
 .whyUs__portion {
   display: flex;
@@ -345,7 +388,10 @@ a {
   width: 10rem;
   color: var(--gray);
 }
-
+@media only screen and (max-width: 900px) {
+  .whyUs__div {
+  }
+}
 /*///////////////////////////////////////////////////////*/
 /* About Us Container Start Here */
 /*///////////////////////////////////////////////////////*/
@@ -355,11 +401,14 @@ a {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  padding-top: 3rem;
+  width: 100%;
 }
 .about__div {
   display: flex;
   justify-content: space-between;
   padding: 0rem 4rem;
+  max-width: 75rem;
 }
 .about__div2 {
   margin-top: 1.5rem;
@@ -374,7 +423,7 @@ a {
   color: var(--Color02);
 }
 .about__btn {
-  margin-top: 1rem;
+  margin-top: 2rem;
 }
 /*///////////////////////////////////////////////////////*/
 /* Our Services Container Start Here */
@@ -385,6 +434,7 @@ a {
   align-items: center;
   flex-direction: column;
   width: 80%;
+  padding: 3rem 0rem;
 }
 .service__div {
   display: flex;
@@ -439,6 +489,7 @@ a {
   align-items: center;
   flex-direction: column;
   width: 100%;
+  padding: 3rem 0rem;
 }
 .portfolio-sec h3 {
   color: var(--White);
@@ -487,6 +538,7 @@ a {
   align-items: center;
   flex-direction: column;
   max-width: 90rem;
+  padding: 3rem 0rem;
 }
 
 .all__heading img {
@@ -610,6 +662,7 @@ a {
   align-items: center;
   flex-direction: column;
   width: 100%;
+  padding: 3rem 0rem;
 }
 .review__div {
   display: flex;
@@ -688,6 +741,7 @@ a {
   align-items: center;
   flex-direction: column;
   width: 100%;
+  padding: 3rem 0rem;
 }
 .skills__div {
   display: flex;
@@ -812,6 +866,7 @@ svg {
   align-items: center;
   flex-direction: column;
   width: 100%;
+  padding: 3rem 0rem;
 }
 .skills__starProject h4 {
   font-size: 2.5rem;
@@ -859,6 +914,7 @@ svg {
   align-items: center;
   flex-direction: column;
   width: 100%;
+  padding: 3rem 0rem;
 }
 .packages__div {
   display: flex;
@@ -947,6 +1003,7 @@ svg {
   background-position: center;
   background-repeat: no-repeat;
   height: 50rem;
+  padding: 3rem 0rem;
 }
 .our-contact-sec i {
   color: var(--Color01);
