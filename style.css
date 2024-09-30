@@ -230,15 +230,23 @@ a {
 
 .custom-select-label {
   text-align: right;
-  width: 15rem;
-  font-size: 1.2rem;
+  width: 10rem;
   z-index: 999;
+}
+.menuBarBtn {
+  font-size: 1.2rem;
+  background-color: white;
+  color: var(--Color02);
+}
+.menuBarBtn:hover {
+  background-color: white;
+  color: var(--Color01);
 }
 
 .options {
-  top: 1.5rem;
+  top: 2rem;
   right: 0;
-  width: 15rem;
+  width: 10rem;
   display: none;
   flex-direction: column;
   background-color: var(--White);
@@ -255,7 +263,7 @@ a {
 
 .option {
   width: 100%;
-  padding: 0.5rem 2rem;
+  padding: 0.2rem 2rem;
   color: var(--Color02);
   transition: 1s ease;
 }
@@ -1452,5 +1460,6 @@ svg {
 @media only screen and (max-width: 1000px) {
   .footer__social {
     justify-content: center;
+    gap: 1rem;
   }
 }
