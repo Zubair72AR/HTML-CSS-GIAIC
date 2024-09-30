@@ -1159,8 +1159,8 @@ svg {
 }
 .packages__orderNow {
   position: relative;
-  bottom: -3rem;
-  padding: 0.6rem 2rem;
+  bottom: -20px;
+  padding: 10px 20px;
   font-size: 0.9rem;
 }
 .packages__btn {
