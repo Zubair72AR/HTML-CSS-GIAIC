@@ -1252,6 +1252,7 @@ svg {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
   width: 100%;
   padding: 1.5rem 15rem;
   background-color: var(--Color01);
@@ -1343,6 +1344,7 @@ svg {
   background-color: #181e25;
   text-align: center;
   padding: 1rem;
+  font-size: 0.8rem;
 }
 .footer__copyRights p {
   color: var(--gray);
@@ -1354,6 +1356,7 @@ svg {
 @media only screen and (max-width: 1500px) {
   .footer__social {
     padding: 1.5rem 3rem;
+    justify-content: center;
   }
   .footer__info {
     padding: 1.5rem 3rem;
