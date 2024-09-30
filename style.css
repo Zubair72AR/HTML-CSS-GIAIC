@@ -1094,15 +1094,15 @@ svg {
   align-items: center;
   flex-direction: column;
   width: 100%;
-  padding: 3rem 0rem;
+  padding: 48px 0px;
 }
 .packages__div {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 0.8rem;
+  gap: 10px;
   position: relative;
-  margin-bottom: 3rem;
+  margin-bottom: 40px;
 }
 .packages__column {
   display: flex;
@@ -1172,7 +1172,7 @@ svg {
     flex-wrap: wrap;
   }
   .packages__column {
-    margin: 1rem;
+    margin: 16px;
   }
 }
 /*/ //////////////////////////////////////////////////////*/
