@@ -1245,7 +1245,7 @@ svg {
   align-items: center;
   flex-direction: column;
   width: 100%;
-  background-image: url("/assets/WorldMap.svg");
+  background-image: url("/assets/WorldMap.gif");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
