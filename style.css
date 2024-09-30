@@ -1099,7 +1099,7 @@ svg {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 1rem;
+  gap: 0.8rem;
   position: relative;
   margin-bottom: 3rem;
 }
@@ -1108,7 +1108,6 @@ svg {
   align-items: center;
   flex-direction: column;
   border: 1px solid #9a9fa6;
-  padding: 1.5rem 1rem;
   width: 20rem;
   height: 24rem;
   background-color: var(--White);
@@ -1122,6 +1121,7 @@ svg {
   font-size: 1.1rem;
   font-weight: 500;
   color: var(--Color02);
+  margin-top: 1.4rem;
   margin-bottom: 0.3rem;
 }
 .packages__column hr {
@@ -1356,7 +1356,6 @@ svg {
 @media only screen and (max-width: 1500px) {
   .footer__social {
     padding: 1.5rem 3rem;
-    justify-content: center;
   }
   .footer__info {
     padding: 1.5rem 3rem;
@@ -1383,5 +1382,10 @@ svg {
     padding: 1.5rem;
     justify-content: space-between;
     display: block;
+  }
+}
+@media only screen and (max-width: 1000px) {
+  .footer__social p {
+    justify-content: center;
   }
 }
