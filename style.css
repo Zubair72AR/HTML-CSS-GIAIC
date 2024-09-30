@@ -200,7 +200,7 @@ a {
   color: var(--Color01);
   border-bottom: 2px solid var(--Color02);
 }
-@media only screen and (max-width: 900px) {
+/*@media only screen and (max-width: 900px) {
   .nav__w90rem {
     flex-direction: column;
   }
@@ -219,6 +219,57 @@ a {
   .nav__menu a {
     font-size: 0.8rem;
     margin: 0rem 1rem;
+  }
+}*/
+
+.custom-select {
+  display: none;
+  justify-content: flex-end;
+  position: relative;
+}
+
+.custom-select-label {
+  text-align: right;
+  width: 15rem;
+  font-size: 1.2rem;
+  z-index: 999;
+}
+
+.options {
+  top: 1.5rem;
+  right: 0;
+  width: 15rem;
+  display: none;
+  flex-direction: column;
+  background-color: var(--White);
+  position: absolute;
+  z-index: 1;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.custom-select:hover .options,
+.custom-select:focus-within .options {
+  display: flex;
+}
+
+.option {
+  width: 100%;
+  padding: 0.5rem 2rem;
+  color: var(--Color02);
+  transition: 1s ease;
+}
+.option:hover {
+  background-color: var(--Color01);
+  color: var(--White);
+}
+
+@media (max-width: 900px) {
+  .nav__menu {
+    display: none; /* Hide nav items on small screens */
+  }
+  .custom-select {
+    display: inline-block; /* Show custom dropdown */
   }
 }
 
