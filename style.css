@@ -294,13 +294,13 @@ a {
   background-color: var(--Color01);
 }
 .image02 {
-  background-color: var(--Color02);
+  background-color: #1cb61c;
 }
 .image03 {
-  background-color: -;
+  background-color: #655dc6;
 }
 .image04 {
-  background-color: var(--Color02);
+  background-color: #f79332;
 }
 
 .full-line {
