@@ -1245,7 +1245,7 @@ svg {
   align-items: center;
   flex-direction: column;
   width: 100%;
-  background-image: url("https://t4.ftcdn.net/jpg/02/41/95/15/360_F_241951583_x3Pn4HbvGKfbdvVd43jKluTYB9IaXz1K.jpg");
+  background-image: url("/assets/WorldMap.svg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
