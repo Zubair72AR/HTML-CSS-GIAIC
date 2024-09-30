@@ -1302,6 +1302,7 @@ svg {
   align-items: center;
   gap: 3rem;
   margin-top: 0.2rem;
+  color: var(--Color02);
 }
 .our-contact {
   display: flex;
