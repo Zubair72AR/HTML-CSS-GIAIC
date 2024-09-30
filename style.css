@@ -432,7 +432,7 @@ a {
   margin-right: 2rem;
 }
 .about__div img {
-  height: 22rem;
+  max-height: 22rem;
 }
 
 .About__para {
@@ -458,8 +458,17 @@ a {
   }
 }
 @media only screen and (max-width: 600px) {
+  .About__para {
+    margin-left: 2rem;
+  }
+  .about__btn {
+    margin: 2rem;
+  }
+  .about__div {
+    padding: 0rem;
+  }
   .about__div img {
-    height: 16rem;
+    max-height: 18rem;
   }
   .about__div2 {
     width: 80%;
@@ -1085,6 +1094,11 @@ svg {
     margin-top: 1rem;
   }
 }
+@media only screen and (max-width: 800px) {
+  .skills__starProject p {
+    width: 90%;
+  }
+}
 /*/ //////////////////////////////////////////////////////*/
 /* Our Packages Container Start Here */
 /*///////////////////////////////////////////////////////*/
@@ -1385,7 +1399,7 @@ svg {
   }
 }
 @media only screen and (max-width: 1000px) {
-  .footer__social p {
+  .footer__social {
     justify-content: center;
   }
 }
