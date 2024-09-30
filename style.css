@@ -182,7 +182,7 @@ a {
 }
 .nav__menu a {
   float: left;
-  margin-left: 0.7rem;
+  margin-left: 0.6rem;
   color: var(--Color02);
   padding: 0.5rem 0rem;
   font-size: 0.85rem;
@@ -209,23 +209,24 @@ a {
 
 .custom-select-label {
   text-align: right;
-  width: 10rem;
+  width: 13rem;
   z-index: 999;
 }
 .menuBarBtn {
   font-size: 1.2rem;
-  background-color: white;
+  background-color: var(--White);
   color: var(--Color02);
+  padding-right: 3rem;
 }
 .menuBarBtn:hover {
-  background-color: white;
+  background-color: var(--White);
   color: var(--Color01);
 }
 
 .options {
   top: 2rem;
   right: 0;
-  width: 10rem;
+  width: 13rem;
   display: none;
   flex-direction: column;
   background-color: var(--White);
@@ -242,7 +243,7 @@ a {
 
 .option {
   width: 100%;
-  padding: 0.2rem 2rem;
+  padding: 0.3rem 2rem;
   color: var(--Color02);
   transition: 1s ease;
 }
@@ -251,7 +252,21 @@ a {
   color: var(--White);
 }
 
+@media (min-width: 900px) {
+  .nav__logo {
+    padding: 0rem;
+  }
+  .nav__w90rem {
+    padding: 0.3rem 3rem;
+  }
+}
 @media (max-width: 900px) {
+  .nav__logo {
+    padding-left: 3rem;
+  }
+  .nav__w90rem {
+    padding: 0.3rem 0rem;
+  }
   .nav__menu {
     display: none; /* Hide nav items on small screens */
   }
@@ -279,13 +294,13 @@ a {
   background-color: var(--Color01);
 }
 .image02 {
-  background-color: dodgerblue;
+  background-color: var(--Color02);
 }
 .image03 {
-  background-color: darkviolet;
+  background-color: -;
 }
 .image04 {
-  background-color: limegreen;
+  background-color: var(--Color02);
 }
 
 .full-line {
@@ -306,9 +321,10 @@ a {
 }
 .full-line h2 {
   font-size: 3.5rem;
-  font-weight: 700;
-  text-transform: uppercase;
+  font-weight: 600;
   color: var(--White);
+  text-align: center;
+  line-height: 4rem;
 }
 .slider p {
   font-size: 0.9rem;
@@ -317,7 +333,7 @@ a {
   max-width: 60%;
   text-align: center;
   color: var(--White);
-  margin-bottom: 3rem;
+  margin: 1.5rem auto 3rem;
 }
 .hero__btn {
   background-color: var(--White);
@@ -374,6 +390,13 @@ a {
   }
   100% {
     left: -400%;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .full-line h2 {
+    font-size: 3rem;
+    line-height: 3.5rem;
   }
 }
 /*/ //////////////////////////////////////////////////////*/
@@ -1266,8 +1289,14 @@ svg {
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 0.2rem 1rem;
+  border-radius: 20px;
+  background-color: var(--White);
 }
 .our-contact__phoneDiv {
+  background-color: var(--White);
+  padding: 0.2rem 1rem;
+  border-radius: 20px;
   display: flex;
   justify-content: center;
   align-items: center;
