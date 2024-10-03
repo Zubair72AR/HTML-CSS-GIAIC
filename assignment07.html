@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Assignment 07</title>
+  </head>
+  <body>
+    <!--Main Heading-->
+    <h1>Chapter # 7 - Forms</h1>
+
+    <!--Form-->
+    <form action="/xyz.php">
+      <fieldset>
+        <legend>Your Details:</legend>
+
+        <br />
+
+        <!--Input Name-->
+        <label for="Name">First Name:</label>
+        <input type="text" name="Name" id="Name" /><br />
+
+        <br />
+
+        <!--Input Email-->
+        <label for="email">First Name:</label>
+        <input type="email" name="email" id="email" />
+
+        <br />
+        <br />
+
+        <!--Input for Submit-->
+        <button type="submit">Login</button>
+
+        <br />
+        <br />
+      </fieldset>
+    </form>
+
+    <br />
+
+    <!--Form-->
+    <form action="/xyz.php">
+      <fieldset>
+        <legend>Your Review:</legend>
+        <br />
+
+        <!--Select and Option-->
+        <label for="choose">How did you hear about us?</label>
+        <select name="choose" id="choose">
+          <optgroup label="Social Media">
+            <option value="Google">Google</option>
+            <option value="Facebook">Facebook</option>
+            <option value="Twitter">Twitter</option>
+            <option value="YouTube">YouTube</option>
+            <option value="Other">Other</option>
+          </optgroup>
+          <optgroup label="Relationship">
+            <option value="Friends">Friends</option>
+            <option value="Relatives">Relatives</option>
+            <option value="Colleagues">Colleagues</option>
+          </optgroup>
+        </select>
+
+        <br />
+        <br />
+
+        <!--Radio Button and Option-->
+        <p>Would you visit again?</p>
+        <input type="radio" id="ans-yes" name="decision" value="Yes" />
+        <label for="ans-yes">Yes</label>
+        <input type="radio" id="ans-no" name="decision" value="No" />
+        <label for="ans-no">No</label>
+        <input type="radio" id="ans-maybe" name="decision" value="Maybe" />
+        <label for="ans-maybe">Maybe</label>
+
+        <br />
+        <br />
+
+        <!--Text Area-->
+        <label for="comments">Comments: </label><br />
+        <textarea name="comments" id="comments" rows="3" cols="50"></textarea>
+
+        <br />
+        <br />
+
+        <!--Check Mark for Email-->
+        <input type="checkbox" name="sendEmail" value="sendEmail" />
+        <label for="sendEmail">Sign me up for email updates </label>
+
+        <br />
+        <br />
+
+        <!--Input for Submit-->
+        <input type="submit" value="Submit Review" />
+
+        <br />
+        <br />
+      </fieldset>
+    </form>
+  </body>
+</html>
